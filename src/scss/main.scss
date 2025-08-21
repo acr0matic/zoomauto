@@ -20,24 +20,25 @@
 
 /* ПОРЯДОК ПОДКЛЮЧЕНИЙ ВЫШЕ МЕНЯТЬ ТОЛЬКО ПРИ ОСОБОЙ НЕОБХОДИМОСТИ */
 
+@import "old";
 @import "layout/components/main";
 
 /* Глобальные стили */
-@import "layout/global/page";
-@import "layout/global/header";
-@import "layout/global/breadcrumbs";
-@import "layout/global/nav";
-@import "layout/global/footer";
-@import "layout/global/mobile";
-@import "layout/global/page-header";
-@import "layout/global/section";
+// @import "layout/global/page";
+// @import "layout/global/header";
+// @import "layout/global/breadcrumbs";
+// @import "layout/global/nav";
+// @import "layout/global/footer";
+// @import "layout/global/mobile";
+// @import "layout/global/page-header";
+// @import "layout/global/section";
 
-/* Стили для узконаправленных тегов */
-@import "layout/misc/image";
-@import "layout/misc/link";
-@import "layout/misc/logo";
-@import "layout/misc/social";
-@import "layout/misc/media-wrapper";
+// /* Стили для узконаправленных тегов */
+// @import "layout/misc/image";
+// @import "layout/misc/link";
+// @import "layout/misc/logo";
+// @import "layout/misc/social";
+// @import "layout/misc/media-wrapper";
 
 /* Стили для повторяющихся блоков */
 @import "layout/partials/main";

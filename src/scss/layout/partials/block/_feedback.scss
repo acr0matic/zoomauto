@@ -1,0 +1,127 @@
+.b-feedback {
+  &__content {
+    padding: 24px 24px 32px;
+    background-color: #f5f5f7;
+
+    p {
+      color: #000000;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  &__item,
+  &__rating,
+  &__stars {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+    max-width: 480px;
+
+    p {
+      margin: 0;
+    }
+
+    &:nth-child(2) {
+      border-right: 1px solid #000000;
+      border-left: 1px solid #000000;
+    }
+  }
+
+  &__rating {
+    gap: 16px;
+  }
+
+  &__stars {
+    gap: 4px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--1 {
+      svg {
+        @include first(1) {
+          path {
+            fill: #ffcc00;
+          }
+        }
+      }
+    }
+
+    &--2 {
+      svg {
+        @include first(2) {
+          path {
+            fill: #ffcc00;
+          }
+        }
+      }
+    }
+
+    &--3 {
+      svg {
+        @include first(3) {
+          path {
+            fill: #ffcc00;
+          }
+        }
+      }
+    }
+
+    &--4 {
+      svg {
+        @include first(4) {
+          path {
+            fill: #ffcc00;
+          }
+        }
+      }
+    }
+
+    &--5 {
+      path {
+        fill: #ffcc00;
+      }
+    }
+  }
+
+  &__digit {
+    font-size: 24px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 8px;
+
+    p {
+      font-size: 21px;
+    }
+  }
+
+  &__source {
+    a {
+      color: #4285f4;
+      text-decoration: underline;
+    }
+  }
+}
